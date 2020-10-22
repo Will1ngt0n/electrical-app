@@ -82,7 +82,9 @@ export class SignInPage implements OnInit {
   
     await alert.present();
   }
-
+  reset() {
+    
+  }
   
 
 }

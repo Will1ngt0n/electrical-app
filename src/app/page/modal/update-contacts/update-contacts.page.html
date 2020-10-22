@@ -10,7 +10,8 @@
         <form [formGroup]="updateContactsForm">
             <ion-item color = "transparent">
                 <ion-icon name="call" style="margin-right: 15px;"></ion-icon>
-                <ion-input placeholder="Contacts" value="{{numbers}}" [(ngModel)]="contacts" formControlName="contacts"></ion-input>
+                <!-- <ion-input placeholder="Contacts" value="{{numbers}}" [(ngModel)]="contacts" formControlName="contacts"></ion-input> -->
+                <ion-input placeholder="Contacts" value="{{numbers}}" formControlName="contacts"></ion-input>
             </ion-item>
         </form>
     </div>

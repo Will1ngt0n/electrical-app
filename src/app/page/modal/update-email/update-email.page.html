@@ -10,7 +10,8 @@
         <form [formGroup]="updateEmailForm">
             <ion-item color = "transparent">
                 <ion-icon name="mail" style="margin-right: 15px;"></ion-icon>
-                <ion-input placeholder="Email" [(ngModel)]="email" formControlName="email" value="{{e_mail}}"></ion-input>
+                <!-- <ion-input placeholder="Email" [(ngModel)]="email" formControlName="email" value="{{e_mail}}"></ion-input> -->
+                <ion-input placeholder="Email" formControlName="email" value="{{e_mail}}"></ion-input>
             </ion-item>
         </form>
     </div>

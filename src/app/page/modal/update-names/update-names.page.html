@@ -10,12 +10,14 @@
         <form [formGroup]="updateForm">
             <ion-item color = "transparent">
                 <ion-icon name="person" style="margin-right: 10px;"></ion-icon>
-                <ion-input [(ngModel)]="name" formControlName="name" placeholder="Name" value="{{firstN}}"></ion-input>
+                <!-- <ion-input [(ngModel)]="name" formControlName="name" placeholder="Name" value="{{firstN}}"></ion-input> -->
+                <ion-input formControlName="name" placeholder="Name" value="{{firstN}}"></ion-input>
             </ion-item>
 
             <ion-item color = "transparent" style = "margin-top: 10px;">
                 <ion-icon name="person" style="margin-right: 10px;"></ion-icon>
-                <ion-input [(ngModel)]="surname" formControlName="surname" placeholder="Surname" value="{{lastN}}"></ion-input>
+                <!-- <ion-input [(ngModel)]="surname" formControlName="surname" placeholder="Surname" value="{{lastN}}"></ion-input> -->
+                <ion-input formControlName="surname" placeholder="Surname" value="{{lastN}}"></ion-input>
             </ion-item>
         </form>
 

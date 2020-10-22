@@ -1,4 +1,4 @@
-import { TabsPage } from './page/tabs/tabs.page';
+// import { TabsPage } from './page/tabs/tabs.page';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -42,7 +42,8 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 @NgModule({
-  declarations: [AppComponent, TabsPage,],
+  // declarations: [AppComponent, TabsPage,],
+  declarations: [AppComponent,],
   entryComponents: [],
   imports: [BrowserModule,IonicModule.forRoot(),HttpClientModule, AppRoutingModule, BrowserAnimationsModule, MatExpansionModule,
     BrowserModule,

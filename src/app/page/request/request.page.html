@@ -28,7 +28,7 @@
         <h3>Need more services</h3>
         <h6>Electrica & Metarial</h6>
 
-        <ion-select multiple="true" cancelText="Dismiss" okText="Okay!" (ionChange) = "collect(services)" [(ngModel)]="run1">
+        <ion-select multiple="true" cancelText="Dismiss" okText="Okay!" (ionChange) = "collect('services')" [(ngModel)]="run1">
             <ion-select-option *ngFor="let services of ArrayServices;" [value]="services.name">
                 {{services.name}}
             </ion-select-option>

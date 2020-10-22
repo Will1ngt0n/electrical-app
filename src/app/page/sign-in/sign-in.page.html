@@ -27,7 +27,8 @@
                 <div class="shipping-card">
                     <ion-item color="transparent" class="group">
                         <ion-label position="floating">Email</ion-label>
-                        <ion-input type="email" [(ngModel)]="email" formControlName="email" class="line"></ion-input>
+                        <!-- <ion-input type="email" [(ngModel)]="email" formControlName="email" class="line"></ion-input> -->
+                        <ion-input type="email" formControlName="email" class="line"></ion-input>
                     </ion-item>
                     <div class="error" *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched">
                         Please input your email
