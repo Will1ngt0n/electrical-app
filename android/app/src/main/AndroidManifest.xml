@@ -60,4 +60,6 @@
     <!-- Audio -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- onesignal notification color -->
+    <!-- <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FF0000" /> -->
 </manifest>

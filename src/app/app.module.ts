@@ -1,4 +1,4 @@
-// import { TabsPage } from './page/tabs/tabs.page';
+import { TabsPage } from './page/tabs/tabs.page';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -21,11 +21,15 @@ import * as moment from 'moment';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { StarRatingModule} from 'ionic4-star-rating';
 
-import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx'; 
 import { Downloader } from '@ionic-native/downloader/ngx';
 import { PreviewAnyFile } from '@ionic-native/preview-any-file/ngx';
 import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
 import { File } from '@ionic-native/file/ngx';
+
+import { OneSignal } from '@ionic-native/onesignal/ngx';
+import { LocalNotifications} from '@ionic-native/local-notifications/ngx'
+// import { LocalNotifications, ELocalNotificationTriggerUnit } from '@ionic-native/local-notifications/ngx';
 
 var firebaseConfig = {
   apiKey: "AIzaSyB83CuKn-QSuzzxN6X8l2L5UKqfeb2NjvA",
@@ -42,8 +46,8 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 @NgModule({
-  // declarations: [AppComponent, TabsPage,],
-  declarations: [AppComponent,],
+  declarations: [AppComponent, TabsPage,],
+  // declarations: [AppComponent,],
   entryComponents: [],
   imports: [BrowserModule,IonicModule.forRoot(),HttpClientModule, AppRoutingModule, BrowserAnimationsModule, MatExpansionModule,
     BrowserModule,
@@ -71,7 +75,9 @@ firebase.analytics();
     // PreviewAnyFile
     DocumentViewer,
     PreviewAnyFile,
-    File
+    File,
+    OneSignal,
+    LocalNotifications
   ],
   bootstrap: [AppComponent,]
 })
